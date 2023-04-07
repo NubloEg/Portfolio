@@ -607,14 +607,15 @@ header{
 	width:100%;
 	max-width:373px;;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	cursor: pointer;
+	
 	
 }
 
 .my_skils_item:hover .my_skills_info{
 	
-	padding-bottom: 30px;
+	transform:translateY(-10px)
 }
 
 .my_skills_info{
@@ -640,7 +641,7 @@ border-radius: 30px;
 
 .title_text{
 	width: 243px;
-height: 24px;
+
 
 font-family: 'Inter';
 font-style: normal;
@@ -654,6 +655,7 @@ color: #FFFFFF;
 }
 
 .main_text{
+	margin-top: 5px;
 	font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
