@@ -4,6 +4,8 @@
 	padding: 0;
 	margin: 0;
 	border: 0;
+	
+	
 }
 *, *:before, *:after{
 	-moz-box-sizing: border-box;
@@ -24,6 +26,7 @@ html, body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	
 }
 
 input, button, textarea{font-family: inherit;}
@@ -344,13 +347,13 @@ header{
 @media(max-width:560px){
 	.skils_item{
 		font-size: 8px;
-		line-height: 14px;
+		line-height: 12px;
 		letter-spacing: 0.03em;
 	}
 	
 	.orange{
 		margin-top: 5px;
-		font-size: 15px;
+		font-size: 12px;
 		line-height: 22px;
 		
 	}
@@ -738,7 +741,7 @@ color: #FFFFFF;
 	justify-content: center;
 	flex-direction: column;
 	box-sizing:content-box;
-	padding: 0 15px;
+	
 }
 @media (max-width:1250px) {
 	.project_items{
@@ -760,16 +763,23 @@ color: #FFFFFF;
 
 .project_head{
 	font-family: 'Inter';
-font-style: normal;
-font-weight: 800;
-font-size: 52px;
-line-height: 53px;
-/* identical to box height, or 102% */
+	font-style: normal;
+	font-weight: 800;
+	font-size: 52px;
+	line-height: 53px;
+	/* identical to box height, or 102% */
 
-text-align: center;
+	text-align: center;
 
-color: #FFFFFF;
-margin-bottom: 47px;
+	color: #FFFFFF;
+	margin-bottom: 47px;
+}
+@media (max-width:550px) {
+	
+	.project_head{
+		font-size:28px;
+		line-height: 30px;
+	}
 }
 
 .project_head_orange{
