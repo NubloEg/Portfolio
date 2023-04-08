@@ -186,10 +186,17 @@ header{
 }
 
 .img_me img{
-	width:100%;
+	width:0%;
 	max-width:535px;
 	border-radius: 30px;
+	transition:all 1s;
 }
+
+.img_me img.active{
+	width: 100%;
+}
+
+
 
 @media(max-width:923px){
 	.hero_container{
@@ -269,9 +276,17 @@ header{
 	flex-direction: row;
 	justify-content:space-around;
 	align-items:center;
+	width: 0%;
+	opacity: 0;
 	height: 60px;
 	background: #FFFFFF;
 	transform: rotate(-0.99deg);
+	transition: all 1s;
+}
+
+.line_skils.active{
+	width: 100%;
+	opacity: 1;
 }
 
 .skils_item{
@@ -351,20 +366,28 @@ header{
 }
 
 .about_container{
-	max-width: 1200px;
+	max-width: 100%;
 	width: 100%;
 	display: flex;
 	justify-content:space-between;
 	align-items:center;
 	flex-wrap:wrap;
+	opacity: 0;
 	padding: 0 15px;
 	box-sizing:content-box;
-	
+	transition:all 1s;
 }
 
 .about_me{
 	margin-top: 15px;
-	max-width:45%;
+	max-width:550px;
+	
+	
+}
+
+.about_container.active{
+	max-width: 1200px;
+	opacity: 1;
 }
 
 .heading_about{
@@ -469,7 +492,10 @@ header{
 	background: url(image.png);
 	border-radius: 40px;
 	width:100%;
+	
 }
+
+
 
 /* /////////////////////////////// */
 
@@ -479,7 +505,15 @@ header{
 	display: flex;
 	justify-content: center;
 	background: #1D1E22;
-	
+	transform: translateY(150px);
+	opacity:0;
+	transition:all 1s;
+}
+
+.Experience.active{
+	transform: translateY(0px);
+	opacity:1;
+
 }
 
 .experience_container{
@@ -609,8 +643,27 @@ header{
 	display: flex;
 	align-items: flex-start;
 	cursor: pointer;
+	transform:translateY(100px);
+	opacity:0;
+	transition:all 1s;
 	
-	
+}
+
+.my_skils_item.active{
+	transform:translateY(0px);
+	opacity:1;
+}
+
+.my_skils_item:nth-child(2).active{
+	transform:translateY(0px);
+	opacity:1;
+	transition-delay: 0.25s;
+}
+
+.my_skils_item:nth-child(3).active{
+	transform:translateY(0px);
+	opacity:1;
+	transition-delay: 0.5s;
 }
 
 .my_skils_item:hover .my_skills_info{

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet icon" href='/img/logo.png' type=”image/x-icon?”>.
+    <link rel="stylesheet icon" href='/img/logo.png?' type=”image/x-icon”>
 </head>
 <body>
     <div class="wrapper">
@@ -34,11 +34,11 @@
                  <a href="https://vk.com/iegorka" target="_blank" class="button">Спросить</a>
                 </div>
                 <div class="img_me">
-                 <img src="./img/Me.png" alt="me"/>
+                 <img class="element-animation" src="./img/Me.png" alt="me"/>
                 </div>
          </div>
         </content>
-        <div class="line_skils">
+        <div class="line_skils element-animation">
                 <div class="skils_item">HTML5</div>
                 <div class="skils_item orange">*</div>
                 <div class="skils_item ">CSS</div>
@@ -56,7 +56,7 @@
                 <div class="skils_item">TypeScript</div>
         </div>
         <content class="about">
-            <div class="about_container">
+            <div class="about_container element-animation">
                 <div class="about_me">
                     <div class="heading_about">
                         <span class="span_orange">About</span>
@@ -78,11 +78,11 @@
                     </div>
                 </div>
                 <div class="about_img">
-                    <img src="./img/about.png" alt="about">
+                    <img class="" src="./img/about.png" alt="about">
                 </div>
             </div>
         </content>
-        <content class="Experience">
+        <content class="Experience element-animation">
             <div class="experience_container">
                 <div class="experience_moduls">
                     <div class="experiens_name">🎓 Образование</div>
@@ -147,21 +147,21 @@
                     <span class="span_orange">skills</span>
                 </div>
                 <div class="my_skills_container">
-                    <div class="my_skils_item">
+                    <div class="my_skils_item element-animation">
                         <div class="rectangle"></div>
                         <div class="my_skills_info">
                             <div class="title_text">Адаптивная и резиновая верстка</div>
                             <div class="main_text">Знаю основные паттерны и использую их в проектах.Продолжаю учить новое и сразу же исправляю в старых проектах.</div>
                         </div>
                     </div>
-                    <div class="my_skils_item">
+                    <div class="my_skils_item element-animation">
                         <div class="rectangle"></div>
                         <div class="my_skills_info">
                             <div class="title_text">Работа с React и Redux(RTK)</div>
                             <div class="main_text">Использовал в проектах как функциональные так и классовые компоненты,а так же работал с хуками.Могу создать простой store с reducer,а могу работать со слайсами. Работал с асинхронными запросами для получения данных с API.</div>
                         </div>
                     </div>
-                    <div class="my_skils_item">
+                    <div class="my_skils_item element-animation">
                         <div class="rectangle"></div>
                         <div class="my_skills_info">
                             <div class="title_text">Разработка на NextJS</div>
@@ -179,7 +179,7 @@
                     <div class="project_head_orange">рабочий продукт,который очаровывает людей</div>
                 </div>
                 
-                <div class="project_items" >
+                <div class="project_items element-animation" >
                     <div class="project_colum">
                         <a href="https://stopwatch-vanila-js.vercel.app/" targe="_blank"><img style="height:605px" src="./img/proj/Stopwatch.png" alt=""></a>
                     </div>
@@ -202,6 +202,6 @@
 
         <footer>© 2023 by Egor Dovgalev</footer>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
