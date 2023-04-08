@@ -276,7 +276,7 @@ header{
 	flex-direction: row;
 	justify-content:space-around;
 	align-items:center;
-	width: 0%;
+	width: 5%;
 	opacity: 0;
 	height: 60px;
 	background: #FFFFFF;
@@ -290,7 +290,6 @@ header{
 }
 
 .skils_item{
-	
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 800;
